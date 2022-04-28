@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: purple;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  p {
+    margin: 0;
+    margin-left: 20px;
+  }
+  button {
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: blue;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,145 @@
+.TodoInput {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.TodoInput label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.TodoInput input {
+  flex-grow: 1;
+  border: none;
+  background: #f7f1f1;
+  padding: 0 1.5em;
+  font-size: initial;
+  outline: none;
+}
+.TodoInput button {
+  padding: 0 1.3rem;
+  border: none;
+  background: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.4s ease-out;
+  outline: none;
+}
+.TodoInput button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.TodoInput input,
+.TodoInput button {
+  font-family: "Quicksand", sans-serif;
+  height: 3rem;
+}
+.TodoList {
+  margin: 4rem auto;
+  padding: 2rem 3rem 3rem;
+  max-width: 700px;
+  background: #42aaf5;
+  color: #fff;
+  box-shadow: 5px 10px 8px 10px #888888;
+  overflow: hidden;
+}
+.TodoList ul {
+  margin-top: 2.6rem;
+  list-style: none;
+}
+
+.TodoList h1 {
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.TodoList h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+
+.todo-enter {
+  opacity: 0;
+}
+.todo-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.todo-exit {
+  opacity: 1;
+}
+.todo-exit-active {
+  /* opacity: 0; */
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms ease-in-out;
+}
+
+.Todo .Todo-buttons i {
+  display: inline-block;
+}
+.form-enter {
+  transform: translateY(77px);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.form-enter-active {
+  transform: translateY(0%);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.form-exit {
+  transform: translateY(0%);
+  position: absolute;
+}
+.form-exit-active {
+  transform: translateY(77px);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+
+.task-text-enter {
+  transform: translateY(-77px);
+  position: absolute;
+}
+.task-text-enter-active {
+  transform: translateY(0);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+}
+.task-text-exit {
+  transform: translateY(0);
+  position: absolute;
+}
+.task-text-exit-active {
+  transform: translateY(-77px);
+  position: absolute;
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+.item-inner p {
+  margin: 0 0 0 15px;
+}
+.button-group button {
+  color: #fff;
+  margin-left: 5px;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: purple;
+}

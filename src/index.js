@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import TodoRedux from "./todoredux/TodoRedux";
+import store from "./store";
+import { Provider } from "react-redux";
+import Main from "./Main";
+
+// import App from "./App"; this one is for router
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Provider store={store}>
+      <TodoRedux />
+    </Provider> */}
+    {/* <App /> This one is for router */}
+    <Main /> {/* Todo list without redux*/}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
